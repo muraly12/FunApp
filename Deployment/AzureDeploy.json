@@ -194,7 +194,7 @@
       },
       {
         "type": "Microsoft.KeyVault/vaults",
-        "apiVersion": "2016-10-01",
+        "apiVersion": "2019-06-01",
         "name": "[variables('KeyVaultName')]",
         "location": "[resourceGroup().location]",
         "dependsOn": [],
@@ -234,7 +234,7 @@
       },
       {
         "type": "Microsoft.KeyVault/vaults/secrets",
-        "apiVersion": "2016-10-01",
+        "apiVersion": "2019-06-01",
         "name": "[concat(variables('KeyVaultName'), '/ZipPassword')]",
         "location": "[resourceGroup().location]",
         "dependsOn": [
